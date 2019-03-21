@@ -42,7 +42,7 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 		
 		super("Construis ta structure"); //definit le nom de la fenetre
 		setSize(longueur,largeur); //definit la taille de la fenetre
-        setMinimumSize(new Dimension(800, 700)); //Definit la fenetre minimale
+        setMinimumSize(new Dimension(1000, 1000)); //Definit la fenetre minimale
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		panelMove = new MoveComponents();
