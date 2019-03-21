@@ -28,7 +28,7 @@ public class FenetreMenu extends JFrame implements ActionListener{
         //Création des éléments visibles sur la fenetre
         boutonJeu= new JButton("Nouvelle Structure");
         boutonScore= new JButton("Tableau des scores");
-        texte = new JLabel("<html>Bienvenue dans la soufflerie 2.0,<br>testez vos maquettes en toute simplicité</html>");
+        texte = new JLabel("<html>Bienvenue sur le Constructor 2000 ,<br>testez vos constructions en toute simplicité</html>");
         
         //Image en fond
         Icon fond = new ImageIcon("Ressources/FondAccueil.jpg");
@@ -37,6 +37,7 @@ public class FenetreMenu extends JFrame implements ActionListener{
         
 		//Je lie les boutons à l'écouteur de la fenêtre
 		boutonJeu.addActionListener(this);
+		boutonScore.addActionListener(this); // J'ai rajouté Axel
         
         //Création d'un conteneur principal
         JPanel conteneurPrincipal = new JPanel();
@@ -77,8 +78,12 @@ public class FenetreMenu extends JFrame implements ActionListener{
             new FenetrePrincipale(1000,1000);
             this.dispose(); 
         }  
+        else if ( e.getSource()==boutonScore){   // Ajouté par Axel
+			Score fenetre = new Score();
+            this.dispose(); 
+        }  
     }
-
+ 
 	public static void main(String[] args) {
 
 		new FenetreMenu();
@@ -86,5 +91,7 @@ public class FenetreMenu extends JFrame implements ActionListener{
 	}
 
 }
+
+
 
 
