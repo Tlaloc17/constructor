@@ -19,6 +19,8 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 		private PanelBackGround panelBG;
 		private JButton btnDessiner;
 		private JButton btnRetour;
+		private LabelImage labelFalaiseGauche;
+		private LabelImage labelFalaiseDroite;
 		private JTabbedPane tabs;
 		private PanelListeForme[] listePanel;
 		private Donnees donnees;
@@ -40,7 +42,7 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 		
 		super("Construis ta structure"); //definit le nom de la fenetre
 		setSize(longueur,largeur); //definit la taille de la fenetre
-        setMinimumSize(new Dimension(800, 600)); //Definit la fenetre minimale
+        setMinimumSize(new Dimension(800, 700)); //Definit la fenetre minimale
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		panelMove = new MoveComponents();
@@ -53,6 +55,11 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 		
 		btnRetour = new JButton("Menu");
 		btnRetour.addActionListener(this);
+		
+		labelFalaiseDroite = new LabelImage(new ImageIcon("Ressources/Falaise.png"));
+		labelFalaiseDroite.setLocation(-10,440);
+		labelFalaiseGauche = new LabelImage(new ImageIcon("Ressources/Falaise.png"));
+		labelFalaiseGauche.setLocation(550,440);
 		
 		this.addComponentListener(this);
 		
@@ -76,6 +83,8 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 		
 		panelMove = new MoveComponents();
 		panelBG.add(panelMove);
+		panelMove.add(labelFalaiseDroite);
+		panelMove.add(labelFalaiseGauche);
 		
 		donnees=new Donnees(this);	
 		listePanel=donnees.getTab();
