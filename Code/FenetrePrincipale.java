@@ -42,7 +42,7 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 		
 		super("Construis ta structure"); //definit le nom de la fenetre
 		setSize(longueur,largeur); //definit la taille de la fenetre
-        setMinimumSize(new Dimension(1000, 1000)); //Definit la fenetre minimale
+        setMinimumSize(new Dimension(1000, 500)); //Definit la fenetre minimale
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		panelMove = new MoveComponents();
@@ -57,9 +57,9 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 		btnRetour.addActionListener(this);
 		
 		labelFalaiseDroite = new LabelImage(new ImageIcon("Ressources/Falaise.png"));
-		labelFalaiseDroite.setLocation(-10,440);
+		labelFalaiseDroite.setBounds(-15,(this.getHeight()-560),300,200);
 		labelFalaiseGauche = new LabelImage(new ImageIcon("Ressources/Falaise.png"));
-		labelFalaiseGauche.setLocation(550,440);
+		labelFalaiseGauche.setBounds((this.getWidth()-455),(this.getHeight()-560),300,200);
 		
 		this.addComponentListener(this);
 		
