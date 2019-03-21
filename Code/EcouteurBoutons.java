@@ -17,7 +17,7 @@ public class EcouteurBoutons implements ActionListener {
 		this.movePanel = movePanel;
 	}
 	
-	/** Action engendrée par l'appui sur un bouton BoutonImage
+	/** Action engendree par l'appui sur un bouton BoutonImage
 	 * @see LabelImage
 	 */
 	

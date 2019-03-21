@@ -4,7 +4,7 @@ import java.io.*;
 import javax.imageio.*;
 
 /**
- * @author ManonSophieClaire
+ * @author Oscar,Axel,Emanuela,Claire
  *
  */
 public class imageToArray {
@@ -21,7 +21,7 @@ public class imageToArray {
 		}
 	
 	/**
-	 * @param dessin Image créée grâce au dessin fait à la main
+	 * @param dessin Image creee grace au dessin fait a la main
 	 */
 	public void analyser(BufferedImage dessin){
 		try { 
@@ -49,7 +49,7 @@ public class imageToArray {
 				}
 			}
 			
-			//Décommenter pour afficher l'image reçue sous forme de tableau 2D dans le terminal
+			//Decommenter pour afficher l'image recue sous forme de tableau 2D dans le terminal
 			/*for(int i = 0; i < pixels.length; i++){
 				System.out.println();
 				for(int j  = 0; j<pixels[0].length; j++){
@@ -138,7 +138,7 @@ public class imageToArray {
 				}
 			}
 			
-			//Décommenter pour avoir le rectangle le plus proche autour de l'image 
+			//Decommenter pour avoir le rectangle le plus proche autour de l'image 
 			/*for(int i = 0; i < imageRe.length; i++){
 				System.out.println();
 				for(int j  = 0; j<imageRe[0].length; j++){
@@ -195,7 +195,7 @@ public class imageToArray {
 	}
 	
 	/**
-	 * @return formeAnalysee Un string définissant la forme (Triangle, Rectangle ou Oval)
+	 * @return formeAnalysee Un string definissant la forme (Triangle, Rectangle ou Oval)
 	 */
 	public String getFormeAnalysee(){
 		return formeAnalysee;

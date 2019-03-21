@@ -4,7 +4,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
-/**Sous-classe de PanelListeForme prenant en charge les images importées par l'utilisateur */
+/**Sous-classe de PanelListeForme prenant en charge les images importees par l'utilisateur */
 public class PanelListeFormeImport extends PanelListeForme {
 	
 	/** Conctructeur
@@ -16,8 +16,8 @@ public class PanelListeFormeImport extends PanelListeForme {
 		super(liste, "Images Importees", panelMove);
 	}
 	
-	/** Ajoute une image à la listte des images importées et crée son bouton
-	 * @param img Image à importer 
+	/** Ajoute une image a la listte des images importees et cree son bouton
+	 * @param img Image a importer 
 	 */
 	public void addImported(ImageIcon img){
 		

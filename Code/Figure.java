@@ -34,7 +34,7 @@ abstract public class Figure {
 		return couleur;
 	}
 	
-    /** @return l'état rempli ou non rempli de la figure */
+    /** @return l'etat rempli ou non rempli de la figure */
 	public boolean getFilled(){
 		return filled;
 	}

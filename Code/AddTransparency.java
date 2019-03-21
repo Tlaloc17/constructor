@@ -31,7 +31,7 @@ AddTransparency() throws IOException{
   /**
  * @param image L'image que l'on veut rendre transparente
  * @param color La couleur que l'on veut rendre transparente sur l'image
- * @return L'image transparente (avec des problèmes sur les bords de l'image)
+ * @return L'image transparente (avec des problemes sur les bords de l'image)
  */
 private Image TransformWhiteToTransparency(BufferedImage image,Color color){
     ImageFilter filter = new RGBImageFilter()
@@ -62,7 +62,7 @@ private Image TransformWhiteToTransparency(BufferedImage image,Color color){
  * @param image Une image de type Image que l'on veut transformer en BufferedImage
  * @param width Largeur de l'image de base
  * @param height Hauteur de l'image de base
- * @return L'image transformée en BufferedImage
+ * @return L'image transformee en BufferedImage
  */
 private BufferedImage ImageToBufferedImage(Image image, int width, int height)
   {
@@ -74,7 +74,7 @@ private BufferedImage ImageToBufferedImage(Image image, int width, int height)
   }
   
   /**
- * @return Nom du fichier créé par la création d'une forme personnalisée
+ * @return Nom du fichier cree par la creation d'une forme personnalisee
  */
 public String genererNom() {
 	  

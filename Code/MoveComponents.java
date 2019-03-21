@@ -30,7 +30,7 @@ public class MoveComponents extends JPanel {
             oos.writeObject(this);
             oos.close();
         }catch (IOException exception){
-            System.out.println ("Erreur lors de l'écriture : " + exception.getMessage());
+            System.out.println ("Erreur lors de l'ecriture : " + exception.getMessage());
         }
     } 
  
