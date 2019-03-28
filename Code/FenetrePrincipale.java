@@ -43,6 +43,7 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 		super("Construis ta structure"); //definit le nom de la fenetre
 		setSize(longueur,largeur); //definit la taille de la fenetre
         setMinimumSize(new Dimension(1000, 500)); //Definit la fenetre minimale
+       
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		panelMove = new MoveComponents();
@@ -57,9 +58,9 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 		btnRetour.addActionListener(this);
 		
 		labelFalaiseDroite = new LabelImage(new ImageIcon("Ressources/Falaise.png"));
-		labelFalaiseDroite.setBounds(-15,(this.getHeight()-560),300,200);
+		labelFalaiseDroite.setBounds(-11,(this.getHeight()-255),300,200);
 		labelFalaiseGauche = new LabelImage(new ImageIcon("Ressources/Falaise.png"));
-		labelFalaiseGauche.setBounds((this.getWidth()-455),(this.getHeight()-560),300,200);
+		labelFalaiseGauche.setBounds((this.getWidth()-452),(this.getHeight()-255),300,200);
 		
 		this.addComponentListener(this);
 		
@@ -102,13 +103,13 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 		
 		principal.add(tabs, BorderLayout.EAST);
 		
+		
 		//Rendre la fenetre visible
+		this.setResizable(false);
 		setVisible(true);
 		
 		//Set le fond d'ecran de depart du jeu
 		panelBG.setBG(new ImageIcon("/Ressources/background.png"));
-
-		
 	}
 	
 	/** 
@@ -172,7 +173,7 @@ public class FenetrePrincipale extends JFrame implements ActionListener, Compone
 	
 	public static void main(String[] args) {
 
-		new FenetrePrincipale(1000,1000);
+		new FenetrePrincipale(1250,700);
 		
 	}
 }
