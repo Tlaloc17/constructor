@@ -3,10 +3,6 @@ import java.awt.image.*;
 import java.io.*;
 import javax.imageio.*;
 
-/**
- * @author Oscar,Axel,Emanuela,Claire
- *
- */
 public class imageToArray {
 	
 	private String formeAnalysee;

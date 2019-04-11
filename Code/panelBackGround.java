@@ -3,17 +3,12 @@ import javax.swing.ImageIcon;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * @author ManonSophieClaire
- *
- */
+
 public class PanelBackGround extends JPanel {
 	
 	private ImageIcon bg = new ImageIcon("Ressources/background.png");
 	
-	/**
-	 * Constructor
-	 */
+
 	public PanelBackGround(){
 		
 		setBackground(Color.WHITE);

@@ -13,9 +13,7 @@ public class FenetreMenu extends JFrame implements ActionListener{
     private JButton boutonSimulation;
     private JLabel texte;
 
-    /**
-     * Constructor 
-     */
+    
     public FenetreMenu() {
 
         //Définition du nom de la fenetre
