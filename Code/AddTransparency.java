@@ -3,10 +3,6 @@ import java.awt.image.*;
 import java.io.*;
 import javax.imageio.*;
 
-/**
- * @author ManonSophieClaire
- *
- */
 public class AddTransparency{
     
     String nomCourant;

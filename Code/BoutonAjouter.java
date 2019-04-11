@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-/** Bouton utilisé dans la classe fenêtre dessin
+/** Bouton utilise dans la classe fenetre dessin
  * */
 
 public class BoutonAjouter extends JButton {
@@ -9,14 +9,14 @@ public class BoutonAjouter extends JButton {
 	private Figure fig; 
 
 	/**constructeur
-     * @param fig Figure dessinée à ajouter au dessin
+     * @param fig Figure dessinee ajoutee au dessin
      * */
      
 	public BoutonAjouter(Figure fig){
 		super("Ajouter");
 	}
 	
-	/** @return La figure qui doit être ajoutée 
+	/** @return La figure qui doit etre ajoutee 
 	 * @see Figure
 	 */
 	public Figure getFigure(){
