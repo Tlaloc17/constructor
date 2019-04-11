@@ -2,7 +2,7 @@ import javax.swing.ImageIcon;
 import javax.swing.*;
 import java.awt.*;
 
-/** Bouton utilisé dans les onglets de la fenêtre principale
+/** Bouton utilise dans les onglets de la fenetre principale
  * @see PanelListeForme
  * @see PanelListeFormeImport
  */
@@ -31,7 +31,7 @@ public class BoutonImage extends JButton {
 	}
 	
 	/**
-	 * @return l'image modifiée pour être contenue dans le bouton
+	 * @return l'image modifiee pour etre contenue dans le bouton
 	 */
 	public ImageIcon getImage(){
 		return img;

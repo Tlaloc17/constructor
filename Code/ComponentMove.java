@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-/**Classe permattant le deplacement à  la souris et la suppression par un clic droit */
+/**Classe permattant le deplacement a la souris et la suppression par un clic droit */
     public class ComponentMove implements  MouseListener, MouseMotionListener {
  
         private boolean move;
@@ -18,8 +18,8 @@ import javax.swing.*;
             this.container=container;
         }
         
-        /** Action a  executer lors d'un clic dans le Panel
-         * Si un Label est deja  selectionne, un clic le fixe
+        /** Action a executer lors d'un clic dans le Panel
+         * Si un Label est deja selectionne, un clic le fixe
          * Sinon on selectionne le Label le plus proche de la souris et on peut commencer le mouvement
          * Si c'est un clic droit, le Label est supprime
          */
