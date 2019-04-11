@@ -11,10 +11,6 @@ import java.awt.image.*;
 import java.io.*;
 import javax.imageio.*;
 
-/**
- * @author ManonSophieClaire
- *
- */
 public class FenetreDessin extends JFrame implements MouseListener, MouseMotionListener, ActionListener{
 	
 	//Declaration des elements graphiques

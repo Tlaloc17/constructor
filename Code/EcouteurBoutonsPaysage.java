@@ -2,24 +2,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 	
-/**
- * @author ManonSophieClaire
- *
- */
-
 public class EcouteurBoutonsPaysage implements ActionListener {
 
 	private PanelBackGround panelBG; 
 		
 	/** Constructor
-	 * @param panelBG Prend le panel "fond" de la fenêtre pour agir dessus
+	 * @param panelBG Prend le panel "fond" de la fenetre pour agir dessus
 	 */
 	public EcouteurBoutonsPaysage(PanelBackGround panelBG) {
 		this.panelBG = panelBG;
 	}
 		
 	/**
-	 * Action engendrée par l'appui sur un bouton de la catégorie Paysage
+	 * Action engendree par l'appui sur un bouton de la categorie Paysage
 	 *
 	 */
 	public void actionPerformed(ActionEvent e) {
